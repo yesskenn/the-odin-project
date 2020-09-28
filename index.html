@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" source="styles.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Google</title>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul id="nav-left">
             <li>About</li>
             <li>Store</li>
-            <p>making a change because to do something, testing</p>
+            <!-- <p>making a change because to do something, testing</p> -->
         </ul>
 
-        <ul>
+        <ul id="nav-right">
             <li>Gmail</li>
             <li>Images</li>
             <li>Apps</li>
@@ -25,17 +25,18 @@
     </nav>
 
 
-
-    <section id="logo">
+<div class="search-home"
+    <section id="logo-img">
         <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
     </section>
 
     <form id="search-bar">
+        <textarea id="input"> </textarea>
         <button>Google Search</button>
         <button>I'm Feeling Lucky</button>
     </form>
 
-
+</div>
     <footer>
         <ul>
             <li>Advertising</li>
