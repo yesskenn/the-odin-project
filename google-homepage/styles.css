@@ -6,8 +6,8 @@
 }
 
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 10px;
+    font-family: 'arial', sans-serif;
+    font-size: 14px;
     color: rgb(34,34,34);
 }
 
@@ -18,6 +18,13 @@ body {
     
 }
 
+.selfie {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -25,6 +32,7 @@ nav {
     position: fixed;
     padding: 10px 35px;
     justify-content: space-around;
+    margin-top: 20px;
     
 }
 
@@ -36,10 +44,14 @@ nav {
     align-items: center;
 }
 
+
+
 #search-bar {
     display: flex;
     flex-direction: column;
 }
+
+
 
 #input {
     border-radius: 3rem;
@@ -86,21 +98,27 @@ li {
 
 .wrapper {
     min-height: 100%;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    background-color: #eee;
-    
 }
 
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    margin: auto 3rem;
+    width: 100vw;
+    height: 2rem;
+    justify-content: space-around;
+    margin-top;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(241, 241, 241);
+  
 }
 
-ul {
+
+footer > ul {
     display: flex;
-    color: #333;
-   
+    margin: auto;
+    justify-content: space-between;
+
+
 }
+
+
