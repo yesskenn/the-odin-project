@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Bree+Serif&display=swap');
 
 body {
-    display: flex;
-    flex-direction: column;
     background-color: #fff;
     background-image: url("images/abstract-background-yk1080x800.png");
     background-size: cover;
@@ -37,6 +35,66 @@ h5 {
 img {
     max-width: 500px;
     align-self: center;
+
+}
+
+.nav {
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: -4px;
+    background-color: #fff;
+    width: 100vw;
+    text-align: center;
+   
+}
+
+.nav ul{
+    display: inline-flex;
+    list-style: none;
+    j
+    
+    
+}
+
+.nav li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Arimo', serif;
+}
+.nav a:hover {
+    font-weight: 700;
+    color: saddlebrown;
+}
+
+a {
+    color: rgb(187, 102, 5);
+}
+
+a:hover {
+    color: rgb(187,48,5);
+}
+
+a:visited {
+    color: rgb(187,48,5);
+    text-decoration: none;
+}
+
+ul li, ol li{
+    padding: 5px 0px;
+}
+
+.main {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+ 
 }
 
 .title-card {
@@ -45,18 +103,34 @@ img {
     padding: 3rem;
     margin: 2rem;
     min-height: 66vh;
-    border: 3px solid #dd641a;
+    border: 10px double #dd641a;
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
+.title-card a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.title-card a:hover {
+    font-weight: 700;
+    color: saddlebrown;
+}
+
+.title-image {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 50%, 100%);
+}
 .recipe-card { 
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     background-color: #fdfae7;
-    max-width: 600px;
-    max-height: 400px;
+    width: 600px;
+    height: 350px;
     padding: 25px;
-    margin: 50px;
+    margin: 10px;
 }
 
 #label {
@@ -72,20 +146,5 @@ img {
     list-style-type: none;
     align-self: center;
     text-align: center;
-}
-
-
-
-a {
-    color: rgb(187, 102, 5);
-}
-
-a:hover {
-    color: rgb(187,48,5);
-}
-
-a:visited {
-    color: rgb(187,48,5);
-    text-decoration: none;
 }
 
