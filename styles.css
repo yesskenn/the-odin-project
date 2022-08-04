@@ -33,7 +33,7 @@ h5 {
 }
 
 img {
-    max-width: 500px;
+    max-width: 425px;
     align-self: center;
 
 }
@@ -121,6 +121,10 @@ ul li, ol li{
     display: flex;
     flex-direction: column;
     background-color: hsl(0, 50%, 100%);
+}
+
+.title-image h1{
+    padding: 15px;
 }
 .recipe-card { 
     display: flex;
