@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- <link rel="stylesheet" href="styles.css"> -->
+        <title>Rock, Paper, Scissors</title>
+    </head>
+
+    <body>
+        <h1>ROCK, PAPER, SCISSORS</h1>
+        <script>  
+
+
+
+
+
+
+        // Function- get a random number from 0 to 3
+function getComputerChoice() {
+        const choices = ["rock", "paper", "scissors"];
+        return choices[Math.floor(Math.random() * 3)];      
+        
+        // function - if the number was this, then output this corresponding phrase
+        } 
+        
+    getComputerChoice(); // display the random number
+
+
+// getting user choice and transforming input to lower case
+
+    function getHumanChoice() {
+        let choiceOf = prompt("Rock, Paper, Scissors?");
+        return actualChoice = choiceOf.toLowerCase();
+    }
+      /**  if (actualChoice === "rock"){
+            console.log("Rock");
+        } else if (actualChoice === "paper"){
+            console.log("Paper");
+        } else if (actualChoice === "scissors"){
+            console.log("Scissors");
+            }
+            return actualChoice;
+        }
+    getHumanChoice(); **/
+
+
+function determineWinner(humanChoice, computerChoice){
+      
+          if (humanChoice === computerChoice){
+          return "It's a tie!";
+      } 
+
+       if (
+             (humanChoice === "rock" && computerChoice === "paper") ||
+             (humanChoice === "paper" && computerChoice === "scissors") ||
+             (humanChoice === "scissors" && computerChoice === "rock")
+    ) {
+              return "Computer Win!"; 
+
+          } else {
+              return "You win!";
+
+          } } 
+
+
+            
+function playGame(){
+let humanScore = 0;
+let computerScore = 0;
+for (let i=0; i<5; i++){
+    const playerSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    const result = determineWinner (playerSelection, computerSelection);
+    
+    console.log(`Round ${i+1}:`);
+    console.log(`You chose: ${playerSelection}`);
+    console.log(`Computer chose: ${computerSelection}`);
+    console.log(result);
+    
+    if (result === "You win!"){
+        humanScore++;
+    } else if (result === "Computer Win!"){
+        computerScore++;
+    }
+    }
+    
+   
+
+console.log("Game Over")
+
+console.log(`Scores ---------- Human: ${humanScore}, Computer: ${computerScore}`);
+     
+}
+playGame();
+
+     </script>
+
+            
+    </body>
+
+</html>
